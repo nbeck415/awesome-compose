@@ -1,6 +1,8 @@
 services:
   frontend:
     build: frontend
+    labels:
+      shipyard.route: '/'
     ports:
       - 3000:3000
     stdin_open: true
